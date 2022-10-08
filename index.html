@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1 class="h1">Registration Form</h1>
+    <p class id="second">Please fill out this form with the required information.</p>
+</header>
+<form action="">
+<fieldset>
+<label for="name" class="label">Enter your firstname:<span><input type='text'/></span></label>
+
+<label for="name">Enter your last name:<input type='text'/></label>
+
+<label for="email">Enter your email:<input type='email' required/></label>
+
+<label for="new-password">Create a new password:<input type='new-password'/></label>
+</fieldset>
+<fieldset>
+    <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="acct"/>Personal Account</label>
+    <label for="business-account"><input id="business-account" type="radio" name="account-type" class="acct"/>Account</label>
+    <label for="personal-account"><input id="terms and conditions" type="checkbox" required class="acct"/>I accept the <a>terms and conditions</a></label>
+</fieldset>
+
+
+<fieldset>
+    <label for="profile-picture">Upload a profile picture<input type="file"></label>
+    <label for="age">Input your age (years): <input id="age" input type="number" min="13" max="120" /></label>
+    <label>
+        <select name="referrer" id="">How did you hear about us
+            <option value="1">(select one)</option>
+            <option value="2">our website</option>
+            <option value="3">hand bills</option>
+            <option value="4">our social media</option>
+            <option value="5">through a friend</option>
+            <option value="6">others</option>
+        </select>
+    </label>
+    <label> Provide a bio:
+        <textarea name="bio" id="" cols="30" rows="10" placeholder="I love to code..."></textarea>
+    </label>
+</fieldset>
+<input type="submit" value="submit" class="btn"/>
+</form>
+</body>
+</html>
